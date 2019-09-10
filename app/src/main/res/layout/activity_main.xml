@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/editText1"
+        android:layout_below="@id/editText1"
+        android:layout_marginTop="20dp"
+        android:ems="10"/>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/editText2"
+        android:layout_below="@id/editText2"
+        android:layout_marginTop="20dp"
+        android:ems="10"/>
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/editText3"
+        android:layout_below="@id/editText3"
+        android:layout_marginTop="20dp"
+        android:ems="10"/>
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/editText1"
+        android:layout_alignBottom="@id/editText1"
+        android:layout_alignParentLeft="true"
+        android:text="NAME : "
+        android:textSize="22dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/editText2"
+        android:layout_alignBottom="@id/editText2"
+        android:layout_alignParentLeft="true"
+        android:text="SURNAME : "
+        android:textSize="22dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/editText3"
+        android:layout_alignBottom="@id/editText3"
+        android:layout_alignParentLeft="true"
+        android:text="MARKS : "
+        android:textSize="22dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/editText4"
+        android:layout_alignBottom="@id/editText4"
+        android:layout_alignParentLeft="true"
+        android:text="ID : "
+        android:textSize="22dp"/>
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="61dp"
+        android:text="ADD DATA" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/button1"
+        android:layout_marginStart="60dp"
+        android:layout_toEndOf="@+id/button1"
+        android:text="View Data" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="22dp"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/button4"
+        android:width="108dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/button3"
+        android:layout_marginStart="60dp"
+        android:layout_toEndOf="@id/button3"
+        android:text="Delete" />
+
+
+</RelativeLayout>
